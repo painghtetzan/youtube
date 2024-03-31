@@ -1,0 +1,60 @@
+#button1{
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+ /* padding: 10px  7px;*/
+  border-radius: 10%;
+  height: 36px;
+  width: 100px;
+  margin-right: 10px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+#button1:hover{
+  opacity: 0.4;
+}
+#button1:active{
+  opacity: 0.1;
+}
+#button2{
+  background-color: white;
+  color: blue;
+  border: solid blue 1px;
+  cursor: pointer;
+  border-radius: 5%;
+  margin-right: 10px;
+  transition: opacity 0.15s, background-color 0.15s,color 0.15s;
+  padding: 8px 10px;
+  vertical-align: middle;
+  
+}
+#button2:hover{
+  background-color: blue;
+  color: white;
+  border-color: white;
+}
+#button2:active{
+  opacity:0.5
+}
+#button3{
+  background-color: aqua;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius:18px;
+  height: 36px;
+  width: 80px;
+  cursor: pointer;
+  font-size:15px;
+  margin-right: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: bottom;
+}
+#button3:hover{
+  box-shadow: 5px 6px 16px rgba(0, 0, 0, 0.2);
+}
+p{
+  font-family: "Flavors", cursive
+}

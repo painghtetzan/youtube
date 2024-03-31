@@ -1,0 +1,365 @@
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: roboto,Arial;
+}
+
+#image1{
+  
+  
+  width: 100%;
+  margin-bottom: 15px;
+}
+#image2{
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+#searchicon{
+  border: solid 1px grey;
+  height: 22px;
+  position:bottom;
+  padding: 2px 1px;
+  padding-bottom: 3px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+
+.div1{
+  position: relative;
+  height: 275px;
+}
+.div2{
+  position:relative;
+  height: 275px;
+  
+}
+
+.profilediv{
+  
+  width: 50px;
+ 
+}
+.info{
+  width: 240px;
+  display: inline-block;
+}
+.p1{
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.p2,.p3{
+  color: grey;
+}
+.profile-info{
+  display: grid;
+  grid-template-columns: 55px 1fr;
+}
+
+.video-preview-grid{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin-top: 90px;
+}
+@media (max-width: 1060px){
+  .video-preview-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 750px){
+  .video-preview-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:1061px) and (max-width:1800px) {
+  .video-preview-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.header{
+  
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom: solid 1px grey;
+  box-shadow:5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.left-section{
+ 
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right-section{
+  
+  width: 320px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.middle-section{
+  
+  flex: 1;
+  max-width: 600px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input{
+  flex:1;
+  height: 45px;
+  vertical-align: middle;
+  min-width: 300px;
+  padding-left: 8px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-size: 15px;
+  border-color: grey;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.input::placeholder{
+  font-family: roboto,arial;
+  font-size: 15px;
+}
+
+fa-bars,.youtube-form,.fa-youtube,.p-youtube{
+  display: inline-block;
+  
+}
+
+
+
+.p-youtube{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.magnifying-glass-button{
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-color:grey ;
+  margin-left: -1px;
+}
+
+.microphone-button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  position: relative;
+}
+
+button{
+  cursor: pointer;
+}
+
+.humbager-button{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+
+.humbager-button:hover{
+  background-color: lightgray;
+}
+
+.youtube-icon-text-button{
+  background-color: white;
+  border: none;
+}
+
+.bell-button{
+background-color: white;
+border: none;
+height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.bell-button:hover{
+  background-color: lightgray;
+}
+.video-button{
+  background-color: white;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-button:hover{
+  background-color: lightgray;
+}
+
+.sidebar{
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  top: 80px;
+  width: 100px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-row: 1fr;
+  text-align: center;
+  font-weight: 400;
+}
+
+body{
+  padding-left: 110px;
+  background-color: rgb(243, 240, 240);
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position:absolute;
+  right:10px;
+  top: 130px;
+  padding: 4px;
+}
+
+.notification{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  width: 24px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  color: white;
+  padding-top: 3px;
+}
+
+.sidebar-icons{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.sidebar-divs:hover{
+  background-color: lightgrey;
+}
+.microphone-button:hover{
+  background-color: lightgray;
+
+}
+.microphone-button .tooltip{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -40px;
+  left: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.microphone-button:hover .tooltip{
+  opacity: 1;
+}
+
+.video-button .tooltip{
+  display: flex;
+  background-color: black;
+  color: white;
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -28px;
+  left: 2px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.video-button:hover .tooltip{
+  opacity: 1;
+}
+
+.bell-button .tooltip{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -25px;
+  left: 0px;
+  opacity: 0;
+  font-family: Roboto,relative;
+  pointer-events: none;
+}
+
+.bell-button:hover .tooltip{
+  opacity: 1;
+}
+
+.humbager-button .tooltip{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -24px;
+  left: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.humbager-button:hover .tooltip{
+  opacity: 1;
+}
